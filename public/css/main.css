@@ -34,8 +34,6 @@ html, body
     margin: 2px 20px;
 }
 
-.min-logo{ width: 46px; margin: 2px 20px; }
-
 
 /*----- SideNav - Menu -----*/
 
@@ -96,5 +94,30 @@ html, body
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.copy-title { font-size: 1.0rem; color: #f2f2f27a; font-size: 14px; }
-#footer-subtitle { font-size: 0.8rem; }
+.min-logo{ 
+    width: 46px;
+    margin: 2px 20px; 
+    opacity: 0.3; 
+}
+
+.author { 
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    color: #f2f2f27a; 
+    font-size: 14px; 
+    height: 2px;
+    line-height: 44px;
+}
+
+.mail { 
+    display: block;
+    font-size: 11px; 
+    margin-top: -2px;
+    color: #f2f2f238;
+    height: 2px;
+    line-height: 86px;
+}
+
+#mail-icon{ font-size: 11px;  }
