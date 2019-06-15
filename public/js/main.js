@@ -15,6 +15,22 @@
                 templateUrl: 'views/home.html'
             })
 
+            .when('/Portifolio', {
+                templateUrl: 'views/portifolio.html'
+            })
+
+            .when('/Videos', {
+                templateUrl: 'views/videos.html'
+            })
+
+            .when('/Bio', {
+                templateUrl: 'views/biografia.html'
+            })
+
+            .when('/Contato', {
+                templateUrl: 'views/contato.html'
+            })
+
             .otherwise({ redirectTo: '/'});
     }
 })();
