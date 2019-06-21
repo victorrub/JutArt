@@ -39,6 +39,46 @@ html, body
     margin: 2px 20px;
 }
 
+/*----- Mobile Nav -----*/
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+@media (max-width: 992px){
+    .navbar-collapse { background-color: rgba(0, 0, 0, 0.5); }
+    #nav-collapse{ margin-top: 13px; }
+}
+
 /*----- Carousel -----*/
 
 .carousel-item{
@@ -124,6 +164,9 @@ html, body
 
 #mail-icon{ font-size: 11px;  }
 
+@media (max-width: 576px){
+    #footer-logo{ display: none }
+}
 
 /*----- Portfolio -----*/
 
