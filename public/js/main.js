@@ -16,11 +16,13 @@
             })
 
             .when('/Portifolio', {
-                templateUrl: 'views/portifolio.html'
+                templateUrl: 'views/portifolio.html',
+                controller: 'portController'
             })
 
             .when('/Videos', {
-                templateUrl: 'views/videos.html'
+                templateUrl: 'views/videos.html',
+                controller: 'videosController'
             })
 
             .when('/Bio', {

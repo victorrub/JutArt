@@ -1,8 +1,15 @@
 <menu-structure></menu-structure>
 
-<div class="container">
-    <div class="row justify-content-md-center">
-        
+<div class="port-wrapper">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div ng-repeat="frame in frames" class="col-6 col-sm-6 col-md-6 col-lg-3 col-xs-3 port">
+                <a data-toggle="tooltip" data-placement="bottom" tooltip-placement="bottom" uib-tooltip="{{frame.titulo}}" tooltip>
+                    <img src="{{frame.url}}" alt="{{frame.titulo}}" class="img-thumbnail port-thumbnail">
+                    <span class="port-title">{{frame.titulo}}</span>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -6,6 +6,7 @@
         .directive('menuStructure', menuStructure)
         .directive('footerStructure', footerStructure)
         .directive('carousel', carousel)
+        .directive('tooltip', tooltip)
 
     function menuStructure(){
         return {
@@ -28,6 +29,14 @@
                     interval: 4000,
                     pause: false
                 })
+            }
+        }
+    }
+
+    function tooltip(){
+        return{
+            link: function(scope, element, attrs){
+                $('[data-toggle="tooltip"]').tooltip()
             }
         }
     }

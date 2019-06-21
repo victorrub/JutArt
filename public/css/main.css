@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,600);
 
+@font-face {
+	font-family:'CaviarDreams';
+	src: url("../content/fonts/CaviarDreams.ttf");
+}
+
 * { margin:0px; padding:0px; }
 .content { height: 100%; width: 100%; }
 a, button, div, input, select, span, strong, textarea { outline: 0; }
@@ -33,9 +38,6 @@ html, body
     padding: 2px;
     margin: 2px 20px;
 }
-
-
-/*----- SideNav - Menu -----*/
 
 /*----- Carousel -----*/
 
@@ -86,7 +88,7 @@ html, body
 /*----- Footer -----*/
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -121,3 +123,135 @@ html, body
 }
 
 #mail-icon{ font-size: 11px;  }
+
+
+/*----- Portfolio -----*/
+
+.port-wrapper { padding: 140px 0; }
+.port { margin: 10px 0; }
+
+.port-thumbnail {
+    background-color: #252323f0;
+    border: 1px solid #252323db;
+    height: auto;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.port-title{
+    color: #e6e6e6;
+    font-family: 'CaviarDreams', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/*----- Videos -----*/
+
+.videos-wrapper{ padding: 120px 0; }
+
+.videos-embed{ margin: 10px 2px; padding: 10px; }
+.vid-height { height: 400px; }
+.fix-resolution { padding: 48px 0; }
+
+/*----- Bio -----*/
+
+.bio-wrapper{ padding: 120px 0; }
+
+.bio { 
+    color: #f2f2f2; 
+    font-family: 'CaviarDreams', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+}
+
+.bio-thumbnail {
+    background-color: #fff2f2f0;
+    border: 1px solid #f5efefdb;
+    border-radius: 300px;
+    height: auto;
+    width: auto;
+    margin: 10px 0;
+}
+
+.divider {
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.bio-title{
+    margin: 5px;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.bio-corpo{
+    margin: 5px;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.bio-list{
+    position: relative;
+    top: 5px;
+    margin: 10px 0;
+    margin-block-end: 2.00em;
+    left: 22px;
+    color: white;
+    font-size: 15px;
+}
+
+.no-list{ display: block; }
+
+/*----- Contato -----*/
+
+.contato-wrapper{ padding: 150px 0; }
+.center { text-align: center; margin-top: 25px; }
+
+.contato{ margin-top: 25px; }
+
+.contato-title{
+    color: #f2f2f2;
+    font-size: 22px;
+    font-family: 'CaviarDreams';
+    text-align: center;
+}
+
+.contato-corpo{
+    color: #f2f2f2;
+    font-size: 16px;
+    font-family: 'CaviarDreams';
+    text-align: center;
+}
+
+.contato-link{
+    display: block;
+    font-size: 14px;
+    color: #e4e4e45c;
+    line-height: 34px;
+}
+
+.contato-mail{ height: 2px; }
+.contato-mobile{ margin-top: 10px; }
+
+
+
+.redes-icon{
+    position: relative;
+    width: 54px;
+    padding: 1px;
+    margin: 2px;
+}
+
+@media (max-width: 992px){
+    #palestra{ display: none }
+}
+
+
